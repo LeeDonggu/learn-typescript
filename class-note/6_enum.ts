@@ -7,4 +7,22 @@ enum Shoes {
 }
 
 var myShoes = Shoes.Nike;
-console.log(myShoes); // 0
+console.log(myShoes); // 나이키
+
+// enum 타입을 파라미터로 사용하게 되면 enum에서 제공하는 함수의 타입만 파라미터로 넘길 수 있다.
+enum Answer {
+  Yes = "Y",
+  No = "N",
+}
+
+function askQuestion(answer: Answer) {
+  if (answer === Answer.Yes) {
+    console.log("정답입니다.");
+  }
+  if (answer === Answer.No) {
+    console.log("오답입니다.");
+  }
+}
+
+askQuestion(Answer.Yes);
+askQuestion("Yes");
