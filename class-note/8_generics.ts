@@ -24,12 +24,20 @@
 //   return num;
 // }
 
-function logText(text) {
+// function logText(text: string | number) {
+//   console.log(text);
+//   return text;
+// }
+
+// const a = logText("a");
+// logText(10);
+// const num = logNumber(10);
+// logText(true);
+
+function logText<T>(text: T): T {
   console.log(text);
   return text;
 }
-
-logText("a");
-logText(10);
-// const num = logNumber(10);
-// logText(true);
+const str = logText<string>("안녕하세요");
+str.split("");
+const login = logText<boolean>(true);
