@@ -13,18 +13,23 @@
 // }
 // logText<string>("하이");
 
-function logText(text: string) {
-  console.log(text);
-  //   text.split("").reverse().join("");
-  return text;
-}
+// function logText(text: string) {
+//   console.log(text);
+//   //   text.split("").reverse().join("");
+//   return text;
+// }
 
-function logNumber(num: number) {
-  console.log(num);
-  return num;
+// function logNumber(num: number) {
+//   console.log(num);
+//   return num;
+// }
+
+function logText(text) {
+  console.log(text);
+  return text;
 }
 
 logText("a");
 logText(10);
-const num = logNumber(10);
-logText(true);
+// const num = logNumber(10);
+// logText(true);
