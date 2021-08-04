@@ -41,3 +41,20 @@
 // const str = logText<string>("안녕하세요");
 // str.split("");
 // const login = logText<boolean>(true);
+
+// interface Dropdown {
+//   value: string;
+//   selected: boolean;
+// }
+
+// const obj: Dropdown = {
+//   value: 'abc',
+//   selected: false,
+// };
+
+interface Dropdown<T> {
+  value: T;
+  selected: boolean;
+}
+
+const obj: Dropdown<string> = { value: "abc", selected: false };
