@@ -34,10 +34,10 @@
 // const num = logNumber(10);
 // logText(true);
 
-function logText<T>(text: T): T {
-  console.log(text);
-  return text;
-}
-const str = logText<string>("안녕하세요");
-str.split("");
-const login = logText<boolean>(true);
+// function logText<T>(text: T): T {
+//   console.log(text);
+//   return text;
+// }
+// const str = logText<string>("안녕하세요");
+// str.split("");
+// const login = logText<boolean>(true);
