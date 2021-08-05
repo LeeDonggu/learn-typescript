@@ -79,3 +79,18 @@ function logTextLength<T extends LengthType>(text: T): T {
 }
 logTextLength(10);
 logTextLength({ leng: 10 });
+
+// 제네릭 타입 제한 3 - keyof
+interface ShoppingItem {
+  name: string;
+  price: number;
+  stock: number;
+}
+
+// keyof를 사용하면 ShoppingItem의 타입안에 있는 키값중 하나만 인자로 받는다.
+function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T {
+  return itemOption;
+}
+// getShoppingItemOption(10);
+// getShoppingItemOption<string>('a');
+getShoppingItemOption("name");
