@@ -35,3 +35,7 @@ var detailedItem: DetailedDropdown<string> = {
   value: "a",
   tag: "a",
 };
+
+// Best Common Type
+// 가장 근접한 타입을 추론하는 방법
+var arr = [1, 2, true, true, "hi"];
