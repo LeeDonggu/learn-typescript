@@ -12,3 +12,5 @@ function fetchProducts(): Promise<Project[]> {}
 type ShoppingItem = Pick<Product, "id" | "name" | "price">;
 
 function displayProductDetail(shoppingItem: ShoppingItem) {}
+
+// Omit은 Pick의 반대로 동작
